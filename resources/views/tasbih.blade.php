@@ -86,11 +86,15 @@
                     <div class="">
                         <div class="grid gap-4 ">
                             <div class="w-full ">
-                                <x-input class="" id="categoryName" label="Tasbih (English):"
+                                <x-input class="" id="categoryName" label="Tasbih (Urdu):"
                                     placeholder="Enter Here" name="category_name" type="text"></x-input>
                                 <div class="mt-4">
                                     <x-input class="" id="categoryName" label="Tasbih (Arabic)::"
                                         placeholder="ا ب ج " name="category_name" type="text"></x-input>
+                                </div>
+                                <div class="mt-4">
+                                    <x-input class="" id="categoryName" label="Tasbih (English):"
+                                    placeholder="Enter Here" name="category_name" type="text"></x-input>
                                 </div>
                                <div class="mt-4">
                                 <x-select  name="category_type" id="categoryType1" label="Select Category">

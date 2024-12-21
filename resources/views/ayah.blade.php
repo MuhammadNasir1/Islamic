@@ -88,10 +88,14 @@
                     <div class="">
                         <div class="grid gap-4 ">
                             <div class="w-full ">
-                                <x-input class="" id="categoryName" label="Ayah (English):"
+                                <x-input class="" id="categoryName" label="Ayah (Urdu):"
                                     placeholder="Enter Here" name="category_name" type="text"></x-input>
                                 <div class="mt-4">
-                                    <x-input class="" id="categoryName" label="Ayah (Arabic)::"
+                                    <x-input class="" id="categoryName" label="Ayah (Arabic):"
+                                        placeholder="ا ب ج " name="category_name" type="text"></x-input>
+                                </div>
+                                <div class="mt-4">
+                                    <x-input class="" id="categoryName" label="Ayah (English):"
                                         placeholder="ا ب ج " name="category_name" type="text"></x-input>
                                 </div>
                                <div class="mt-4">

@@ -86,11 +86,15 @@
                     <div class="">
                         <div class="grid gap-4 ">
                             <div class="w-full ">
-                                <x-input class="" id="categoryName" label="Doa (English):"
+                                <x-input class="" id="categoryName" label="Doa (Arabic):"
                                     placeholder="Enter Here" name="category_name" type="text"></x-input>
                                 <div class="mt-4">
-                                    <x-input class="" id="categoryName" label="Doa (Arabic)::"
+                                    <x-input class="" id="categoryName" label="Doa (Urdu)::"
                                         placeholder="ا ب ج " name="category_name" type="text"></x-input>
+                                </div>
+                                <div class="mt-4">
+                                    <x-input class="" id="categoryName" label="Doa (English):"
+                                    placeholder="Enter Here" name="category_name" type="text"></x-input>
                                 </div>
                                <div class="mt-4">
                                 <x-select  name="category_type" id="categoryType1" label="Select Category">
@@ -159,8 +163,8 @@
                 $('#updateId').val($(this).attr('categoryId'));
                 let fileImg = $('#categories-modal .file-preview');
                 fileImg.removeClass('hidden').attr('src', $(this).attr('categoryImage'));
-                $('#categories-modal #modalTitle').text("Update Category");
-                $('#categories-modal #btnText').text("Update");
+                $('#categories-modal #modalTitle').text("Edit Doa");
+                $('#categories-modal #btnText').text("Edit Doa");
 
             });
         }
@@ -171,7 +175,7 @@
             $('#updateId').val('');
             let fileImg = $('#categories-modal .file-preview');
             fileImg.addClass('hidden');
-            $('#categories-modal #modalTitle').text("Add Category");
+            $('#categories-modal #modalTitle').text("Add Doa");
             $('#categories-modal #btnText').text("Add Doa");
 
         })

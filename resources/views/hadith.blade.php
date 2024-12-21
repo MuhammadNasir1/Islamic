@@ -90,14 +90,18 @@
                     <div class="">
                         <div class="grid gap-4 ">
                             <div class="w-full ">
-                                <x-input class="" id="categoryName" label="Hdith (English):"
-                                    placeholder="Enter Here" name="category_name" type="text"></x-input>
-                                <div class="mt-4">
                                     <x-input class="" id="categoryName" label="Hadith (Arabic):"
                                         placeholder="ا ب ج " name="category_name" type="text"></x-input>
+                                <div class="mt-4">
+                                    <x-input class="" id="categoryName" label="Hadith (Urdu):"
+                                        placeholder="ا ب ج " name="category_name" type="text"></x-input>
+                                </div>
+                                <div class="mt-4">
+                                    <x-input class="" id="categoryName" label="Hdith (English):"
+                                    placeholder="Enter Here" name="category_name" type="text"></x-input>
                                 </div>
                                 <div class="grid grid-cols-3 gap-2 mt-4">
-                                    <x-select name="category_type" id="categoryType" label="Select Category ">
+                                    {{-- <x-select name="category_type" id="categoryType" label="Select Category ">
                                         <x-slot name="options">
                                             <option disabled selected>Select</option>
                                             <option value="blogs">Blog</option>
@@ -112,15 +116,19 @@
                                             <option value="diseases">Diseases</option>
                                             <option value="consultancy">Consultancy</option>
                                         </x-slot>
-                                    </x-select>
-                                    <x-select name="category_type" id="categoryType2" label="Hadith Number">
-                                        <x-slot name="options">
-                                            <option disabled selected>1234</option>
-                                            <option value="blogs">Blog</option>
-                                            <option value="diseases">Diseases</option>
-                                            <option value="consultancy">Consultancy</option>
-                                        </x-slot>
-                                    </x-select>
+                                    </x-select> --}}
+                                    <div class="">
+                                        <x-input class="" id="categoryName" label="Select Category"
+                                            placeholder="1234" name="category_name" type="text"></x-input>
+                                    </div>
+                                    <div class="">
+                                        <x-input class="" id="categoryName" label="Select Book"
+                                            placeholder="1234" name="category_name" type="text"></x-input>
+                                    </div>
+                                    <div class="">
+                                        <x-input class="" id="categoryName" label="Hadith Number"
+                                            placeholder="1234" name="category_name" type="text"></x-input>
+                                    </div>
                                 </div>
                                 <div class="px-16 mt-8">
                                     <x-modal-button :title="'Add Category'"></x-modal-button>
@@ -190,8 +198,8 @@
                 $('#updateId').val($(this).attr('categoryId'));
                 let fileImg = $('#categories-modal .file-preview');
                 fileImg.removeClass('hidden').attr('src', $(this).attr('categoryImage'));
-                $('#categories-modal #modalTitle').text("Update Category");
-                $('#categories-modal #btnText').text("Update");
+                $('#categories-modal #modalTitle').text("Edit Hadith");
+                $('#categories-modal #btnText').text("Edit Hadith");
 
             });
         }
@@ -202,7 +210,7 @@
             $('#updateId').val('');
             let fileImg = $('#categories-modal .file-preview');
             fileImg.addClass('hidden');
-            $('#categories-modal #modalTitle').text("Add Category");
+            $('#categories-modal #modalTitle').text("Add Hadith");
             $('#categories-modal #btnText').text("Add Hadith");
 
         })

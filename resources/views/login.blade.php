@@ -43,12 +43,12 @@
                         <i class="text-gray-400 fa-solid fa-eye-slash" id="toggle-icon"></i>
                     </span>
                     <div class="flex justify-end">
-                        <a href="#" class="mt-4 text-xs text-gray-500">Forget Password?</a>
+                        <a href="forgetpage" class="mt-4 text-xs text-gray-500">Forget Password?</a>
                     </div>
                 </div>
                 <div class="p-5 mx-4">
                     <button
-                        class="w-full px-4 py-2 font-bold text-white rounded-full bg-[#029000] hover:bg-lime-600">Login</button>
+                        class="w-full px-4 py-2 font-bold text-white rounded-full bg-[#029000] hover:bg-lime-600"><a href="/">Login</a></button>
                 </div>
             </div>
         </div>

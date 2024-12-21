@@ -33,18 +33,20 @@
             <x-slot name="body">
                 <form id="postDataForm" url="addNotification" method="post">
                     @csrf
-                    <div class="grid grid-cols-2 gap-4">
-                        <x-input id="NotificationTitle" label="Notification Title" placeholder="Enter Title"
-                            name='notification_title' type="text"></x-input>
+                    <x-input id="NotificationTitle" label="Notification Title" placeholder="Enter Title"
+                    name='notification_title' type="text"></x-input>
+                    <div class="grid grid-cols-2 gap-4 mt-4 ">
                         <x-select name="notification_type" id="NotificationType" label="Notification Type">
                             <x-slot name="options">
                                 <option disabled selected>Select Notification Type</option>
                                 <option value="important">Important</option>
                             </x-slot>
                         </x-select>
+                        <x-input id="NotificationTitle" label="Select Time" placeholder="Enter Title"
+                        name='notification_title' type="time"></x-input>
                         <div class="col-span-2">
                             <x-textarea id="NotificationDescription" label="Notification Description"
-                                placeholder="Enter Description" name='notification_description' type="text"></x-textarea>
+                                placeholder="Enter Description" name='notification_description' type="text" required="required"></x-textarea>
                         </div>
                     </div>
                     <div class="mt-4">

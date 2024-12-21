@@ -97,7 +97,7 @@
 
                     <div class="mb-4">
                         <x-textarea type="text" id="Response" name="query_response" label="Query Response"
-                            placeholder="Enter Query Response"></x-textarea>
+                            placeholder="Enter Query Response" required="''"></x-textarea>
                     </div>
                     <div class="px-20 mt-6">
                         <x-modal-button title="Send Response"></x-modal-button>

@@ -40,8 +40,9 @@
                             Continue
                         </button>
                     </div>
-                    <h1 class="mt-4 font-normal text-center text-black text-md">Remember your password?<span
-                            class="text-[#029000] font-bold"> Login Here</span></h1>
+                    <h1 class="mt-4 font-normal text-center text-black text-md">Remember your password?<a
+                            href="loginpage"><span class="text-[#029000] font-bold"> Login Here</span></a>
+                    </h1>
                 </div>
             </div>
         </div>
